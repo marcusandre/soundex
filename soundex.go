@@ -1,13 +1,12 @@
-// Package soundex creates a phonetic soundex key for a given word
+// Package soundex creates a phonetic soundex key for a given word.
 // If you want to learn more, you can look it up in Wikipedia:
 // https://en.wikipedia.org/wiki/Soundex
 //
-// Side notes:
-// - vowels are ignored completely if they are not the first letter
-// - same counts for the consonants H, W and Y
-// - duplicate codes inside the resulting strings will be removed
-// - this is very focused on the English language
-// - and beware: it provides only a very rough analysis
+// Some side notes: Vowels are ignored completely if they are not the first letter.
+// Same counts for the consonants H, W and Y.
+// Duplicate codes inside the resulting strings will be removed.
+// This is also very focused on the English language.
+// And beware: it provides only a very rough analysis.
 package soundex
 
 import (
