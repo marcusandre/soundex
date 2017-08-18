@@ -12,12 +12,18 @@ $ go get github.com/marcusandre/go-soundex
 ## Usage
 
 ```go
+package main
+
 import (
-    github.com/marcusandre/go-soundex
+	"fmt"
+
+	soundex "github.com/marcusandre/go-soundex"
 )
 
-s := soundex.New("Bacon")
-// => B250
+func main() {
+	s := soundex.New("Bacon")
+	fmt.Printf("%+v", s) // => B250
+}
 ```
 
 ## Notes

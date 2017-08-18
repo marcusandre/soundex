@@ -1,7 +1,6 @@
 package soundex
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -17,10 +16,9 @@ func TestNew(t *testing.T) {
 		"Robert":     "R163",
 	}
 	for word, target := range pairs {
-		soundex := New(word)
-		fmt.Println(soundex)
-		if soundex != target {
-			t.Errorf("%s does not equal %s", soundex, target)
+		s := New(word)
+		if s.key != target {
+			t.Errorf("%s does not equal %s", s.key, target)
 		}
 	}
 }
