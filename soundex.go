@@ -39,12 +39,32 @@ var codes = map[rune]rune{
 	'r': '6',
 }
 
-// New creates a soundex for the given string
-func New(s string) string {
+// Soundex is the phonetic key for a given word
+type Soundex struct {
+	word string
+	key  string
+}
+
+// New initializes a new Soundex
+func New(word string) Soundex {
+	key := generate(word)
+	return Soundex{
+		word: word,
+		key:  key,
+	}
+}
+
+// String prints the resulting Soundex key
+func (s Soundex) String() string {
+	return s.key
+}
+
+// Generate creates a new soundex from a given word
+func generate(word string) string {
 	var prev rune
 	var result []rune
 
-	in := []rune(s)
+	in := []rune(word)
 
 	for i, r := range in {
 		r = unicode.ToLower(r)
