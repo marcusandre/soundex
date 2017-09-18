@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/marcusandre/soundex)](https://goreportcard.com/report/github.com/marcusandre/soundex)
+
 # go-soundex
 
 Implementation of the [Soundex][1] phonetic algorithm in [Go][2] for indexing
@@ -15,14 +17,14 @@ $ go get github.com/marcusandre/go-soundex
 package main
 
 import (
-	"fmt"
+  "fmt"
 
-	soundex "github.com/marcusandre/go-soundex"
+  "github.com/marcusandre/soundex"
 )
 
 func main() {
-	s := soundex.New("Bacon")
-	fmt.Printf("%+v", s) // => B250
+  s := soundex.New("Bacon")
+  fmt.Println(s) // => B250
 }
 ```
 

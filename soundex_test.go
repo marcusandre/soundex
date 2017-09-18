@@ -17,7 +17,7 @@ func TestNew(t *testing.T) {
 	}
 	for word, target := range pairs {
 		s := New(word)
-		if s.key != target {
+		if s.String() != target {
 			t.Errorf("%s does not equal %s", s.key, target)
 		}
 	}
