@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marcusandre/soundex.svg?branch=master)](https://travis-ci.org/marcusandre/soundex) [![Go Report Card](https://goreportcard.com/badge/github.com/marcusandre/soundex)](https://goreportcard.com/report/github.com/marcusandre/soundex)
+[![Go Report Card](https://goreportcard.com/badge/github.com/marcusandre/soundex)](https://goreportcard.com/report/github.com/marcusandre/soundex)
 
 # go-soundex
 
