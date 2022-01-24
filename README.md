@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/marcusandre/soundex)](https://goreportcard.com/report/github.com/marcusandre/soundex)
+[![Go](https://github.com/marcusandre/soundex/actions/workflows/go.yml/badge.svg)](https://github.com/marcusandre/soundex/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/marcusandre/soundex)](https://goreportcard.com/report/github.com/marcusandre/soundex)
 
 # go-soundex
 
